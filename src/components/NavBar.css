@@ -1,0 +1,13 @@
+.color-nav {
+  background-color: #84c1ff;
+  box-shadow: 1px 1px 5px 1px;
+}
+
+.nav-links {
+  font-size: 20px;
+  justify-self: flex-end;
+}
+
+.dropdown-link {
+  font-size: 20px;
+}
