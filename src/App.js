@@ -16,7 +16,7 @@ export default function App() {
     <Router>
       <div>
         <NavBar />
-        <div style={{marginTop: '56px'}}>
+        <div>
           <Switch>
             <Route path="/about">
               <About />

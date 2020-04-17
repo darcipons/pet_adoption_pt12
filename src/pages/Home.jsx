@@ -3,9 +3,9 @@ import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, CardDeck, Col, Row, Container } from "react-bootstrap";
 import { Link } from 'react-router-dom'
-import Benny from '../images/Benny.jpg'
-import Lobs from '../images/Lobs1.jpg'
-import Lemon from '../images/Lemon.jpg'
+import DogHome from '../images/dog-home.jpg'
+import CatHome from '../images/cat-home.jpg'
+import BirdHome from '../images/bird-home.jpg'
 import Ferret from '../images/Ferret.jpg'
 import Story1Pet from '../images/Story1Pet.jpg'
 import Story2Pet from '../images/Story2Pet.jpg'
@@ -18,79 +18,62 @@ function Home() {
         <div className='header-title'>Loveable Paws</div>
       </div>
 
-      <CardDeck>
+      <CardDeck className='home-container'>
         <Card>
-          <Card.Img variant="top" src={ Benny } />
+          <Card.Img variant="top" src={DogHome} />
           <Card.Body>
             <Card.Title className="text-center">Dogs</Card.Title>
             <Card.Text>
-            Adopt DOGS because, they're loyal, playful, affectionate, social, great for all ages and make life better.  
+            Adopt a dog because, they're loyal, playful, affectionate, social, great for all ages and make life better.  
             </Card.Text>
-          </Card.Body>
-          <Link to="/master">
-          <Card.Footer>
-            <large className="text-bold">Woof! Rescue a Dog</large>
-            <p></p> 
+            <br></br>
             <Link to='/master'>
-            <Button className="text-center" variant="success">Search</Button>{' '}
+              <Button className="text-center home-btn">Available Dogs</Button>
             </Link>
-          </Card.Footer>
-          </Link>
+          </Card.Body>
         </Card>
 
         <Card>
-          <Card.Img variant="top" src={ Lobs } />
+          <Card.Img variant="top" src={ CatHome } className='home-img' />
           <Card.Body>
             <Card.Title className="text-center">Cats</Card.Title>
             <Card.Text>
-            Adopt CATS because they're clever, curious, clean, have the best purrs, are independent and make life better.
+            Adopt a cat because they're clever, curious, clean, have the best purrs, are independent and make life better.
             </Card.Text>
+            <br></br>
+            <Link to="/master">
+              <Button className="text-center home-btn" >Available Cats</Button>
+            </Link>
           </Card.Body>
-          <Link to="/master">
-            <Card.Footer>
-              <large className="text-bold">Meow! Rescue a Cat</large>
-              <p></p> 
-              <Button className="text-center" variant="success">Search</Button>
-            </Card.Footer>
-          </Link>
+        
         </Card>
 
         <Card>
-          <Card.Img variant="top" src={ Lemon } />
+          <Card.Img variant="top" src={ BirdHome } />
           <Card.Body>
             <Card.Title className="text-center">Birds</Card.Title>
             <Card.Text>
-            Adopt a BIRD because they're intelligent, great conversationalists, low-maintenance, love company and make life better. 
+            Adopt a bird because they're intelligent, great conversationalists, low-maintenance, love company and make life better. 
             </Card.Text>
+            <br></br>
+            <Link to='/master'>
+              <Button className="text-center home-btn">Available Birds</Button>
+            </Link>
           </Card.Body>
-          <Link to="/master">
-            <Card.Footer>
-              <large className="text-bold">Tweet! Rescue a Bird</large>
-              <p></p> 
-              <Link to='/master'>
-              <Button className="text-center" variant="success">Search</Button>
-              </Link>
-            </Card.Footer>
-          </Link>
         </Card>
 
         <Card>
-          <Card.Img variant="top" src={ Ferret } />
+          <Card.Img variant="top" src={ Ferret } className='home-img' />
           <Card.Body>
             <Card.Title className="text-center">Small and Furry</Card.Title>
             <Card.Text>
             Adopt a Small Furry pet because they're cute, entertaining to watch and play with, loving don't eat too much and make life better. 
             </Card.Text>
+            <br></br>
+            <Link to='/master'>
+              <Button className="text-center home-btn" >Available Small & Furry</Button>
+            </Link>
           </Card.Body>
-          <Link to="/master">
-            <Card.Footer>
-              <large className="text-bold">Squeak! Rescue small</large>
-              <p></p>
-              <Link to='/master'>
-              <Button className="text-center" variant="success">Search</Button>
-              </Link>
-            </Card.Footer>
-          </Link>
         </Card>
       </CardDeck>
 

@@ -114,8 +114,6 @@
 }
 
 button {
-  /* background-color: hsl(210, 66%, 55%);
-  border-color: hsl(217, 66%, 55%); */
   cursor: pointer;
   padding: 1rem;
   border-radius: 5px;

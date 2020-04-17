@@ -4,7 +4,6 @@
   height: 70vh;
   width: 100%;
   background-repeat: no-repeat;
-  margin-bottom: 5rem;
 }
 
 .header-title {
@@ -16,3 +15,15 @@
   padding-top: 12rem;
 }
 
+.home-container {
+  padding: 5rem;
+}
+
+.home-img {
+  height: 59%;
+}
+
+.home-btn {
+  background-color: grey !important;
+  border-color: grey;
+}
