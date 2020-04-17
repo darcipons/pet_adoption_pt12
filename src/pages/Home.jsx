@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -10,8 +10,6 @@ import {
   Row,
   Container
 } from "react-bootstrap";
-
-import PetLookup from "../components/AdoptionStories";
 import { Link } from 'react-router-dom'
 import Benny from '../images/Benny.jpg'
 import Lobs from '../images/Lobs1.jpg'
@@ -21,9 +19,7 @@ import Story1Pet from '../images/Story1Pet.jpg'
 import Story2Pet from '../images/Story2Pet.jpg'
 import Story3Pic from '../images/Story3Pic.jpg'
 
-
 function Home() {
-  const quote = "Unconditional ❤️ love is just a click away"
 
   return (
     <div className="Home">
@@ -34,7 +30,7 @@ function Home() {
             Animals have love to give.  
           </h2>
           <h2>Pets without homes even moreso.</h2>
-          <h3>Unconditional ❤️ love is just a click away</h3>
+          <h3>Unconditional love is just a click away</h3>
           <p>
             <Link to='/about'>
             <Button variant="success">Learn more</Button>{' '}

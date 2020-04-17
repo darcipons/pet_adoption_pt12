@@ -1,18 +1,5 @@
-import React, { Component, useState } from 'react';
-import {
-    Navbar,
-    Nav,
-    Form,
-    FormControl,
-    Button,
-    NavDropdown
-  }from 'react-bootstrap/'
-  import {
-    BrowserRouter as Router,
-    Link,
-    Route,
-    Switch,
-  } from 'react-router-dom';
+import React from 'react';
+import { Navbar, Nav, NavDropdown }from 'react-bootstrap/'
 import PetPawLogo from '../images/PetPawLogo.png'
 
 const NavBar = () => {

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PetLookup from '../components/PetLookup'
 import PetListFilter from '../components/PetListFilter'
 import axios from 'axios'
-import { petList } from '../data/pet_list.js'
 
 class Master extends Component {
   state = {
@@ -13,13 +12,19 @@ class Master extends Component {
 
   getPets = () => {
     axios.get(`/pet_finder/pets?token=${window.caches.pet_finder_token}&animal=dog&location=Miami,FL&limit=20`)
-      .then(response => {
-        this.setState({
-          pets: response.data,
-          filtered: response.data
+      .then(({ data }) => {
+        if (!data) {
+          return false
+        }
+        let breeds = data.forEach(dog => {
+          if(dog && dog.breeds && dog.breeds.primary) {
+            return dog.breeds.primary
+          }
         })
-        let breeds = response.data.map(dog => dog.breeds.primary)
-        this.setState({ breeds: [...new Set(breeds)]})
+        this.setState({ 
+          pets: data,
+          filtered: data,
+          breeds: [...new Set(breeds)]})
       })
     }
 

@@ -1,27 +1,13 @@
-import React, { Component, useState } from 'react';
-import { useParams } from 'react-router-dom'
-import {
-    Container,
-    Form,
-    Col,
-    Row,
-    Button
-    } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Container, Form, Col, Row, Button } from 'react-bootstrap'
 import axios from 'axios'
 import { petList } from "../data/pet_list"
-// import {
-//     DatePicker,
-//     startDate
-//     } from 'react-datepicker'
 
 
 class Visit extends Component {
     state = {
         pet: {}
     }
-    // fetch('/visit/1') 
-    // .then(res => res.json())
-    // .then(res => console.log(res))
 
     getPet=() => {
       let petId = this.props.match.params.petId
@@ -48,8 +34,8 @@ class Visit extends Component {
       let img = this.state.pet.photos && this.state.pet.photos[0].medium
       let alt = this.state.pet.breeds && `A ${this.state.pet.breeds.primary} dog`
       let petName = this.state.pet.name && ` ${this.state.pet.name} `
-      let petGender = this.state.pet.gender && `A ${this.state.gender} dog`
-      let petStatus  = this.state.pet.status && `A ${this.state.pet.status} dog`
+      // let petGender = this.state.pet.gender && `A ${this.state.gender} dog`
+      // let petStatus  = this.state.pet.status && `A ${this.state.pet.status} dog`
 
             return (
             <Row>

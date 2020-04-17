@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-    Col,
-    Row,
-    Container,
-    Image,
-    CardColumns,
-    Card,
-    ListGroup,
-    ListGroupItem, 
-    CardDeck 
-  } from 'react-bootstrap';
+import { CardColumns, Card, ListGroup, ListGroupItem, CardDeck } from 'react-bootstrap';
 import './About.css';
 import IM_profile from '../images/IM_profile.jpeg'
 import IM_dog from '../images/IM_dog2.png'
@@ -23,28 +13,6 @@ class About extends Component {
     render() {
         return (
         <div className='page'>
-
-            {/* <div>
-              <Container className="aboutUs">
-                <h1>Learning is a Journey</h1>
-                <div>
-                  <h2>The path to self-improvement led us to Wynwood</h2>
-                </div>
-                <Container>
-                  <Row>
-                    <Col xs={6} md={4}>
-                      <Image src={ IM_profile } rounded fluid/>
-                    </Col>
-                    <Col xs={6} md={4}>
-                      <Image src={ DP_profile } rounded fluid/>
-                    </Col>
-                    <Col xs={6} md={4}>
-                      <Image src="https://ca.slack-edge.com/T055GEHEJ-UN66Y5AJK-067dd872a453-512" rounded fluid/>
-                    </Col>
-                  </Row>
-                </Container>
-              </Container>
-            </div> */}
 
             <div className='aboutUs'>
               <h1>Learning is a Journey</h1>

@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
-import {
-    Navbar,
-    Nav,
-    Form,
-    FormControl,
-    Button,
-    NavDropdown
-  } from 'react-bootstrap/'
-  import './Footer.css'
-  import dogsAndCats from '../images/dogsAndCatsRow.jpg'
+import { Nav } from 'react-bootstrap/'
+import './Footer.css'
+import dogsAndCats from '../images/dogsAndCatsRow.jpg'
 
 class Footer extends Component {
     render() {
         return (
             <div className="content">
-              <Nav className="mr-auto" className="color-nav">
+              <Nav className="mr-auto color-nav">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/master">Pet Lookup</Nav.Link>
