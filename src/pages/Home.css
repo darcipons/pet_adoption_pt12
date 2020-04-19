@@ -24,6 +24,27 @@
 }
 
 .home-btn {
-  background-color: grey !important;
-  border-color: grey;
+  background-color: #84c1ff !important;
+  border-color: grey !important;
+  color: black !important;
+}
+
+.happy-news-container {
+  margin-bottom: 3rem;
+}
+
+.happy-news-title {
+  font-size: 45px;
+}
+
+.happy-news-stories {
+  font-size: 30px;
+}
+
+.happy-news-article {
+  font-size: 20px;
+}
+
+button.article-btn {
+  border-color: #84c1ff;
 }
